@@ -12,6 +12,7 @@ special = any(char in string.punctuation for char in password)
 space = " " in password
 error = "Password must contain at least 10 characters, 1 number, 1 uppercase letter, 1 lowercase letter, 1 special character, and no spaces"
 
+#errors
 if len(password) < 10:
     print (error)
 elif not upper:
