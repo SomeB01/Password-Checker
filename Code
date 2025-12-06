@@ -1,0 +1,28 @@
+
+#This code is to check the strength of a users password
+
+import string
+
+password = input("Enter Your Password ")
+number = any(char.isdigit() for char in password)
+upper = any(char.isupper() for char in password)
+lower = any(char.islower() for char in password)
+special = any(char in string.punctuation for char in password)
+space = " " in password
+error = "Password must contain at least 10 characters, 1 number, 1 uppercase letter, 1 lowercase letter, 1 special character, and no spaces"
+
+if len(password) < 10:
+    print (error)
+elif not upper:
+    print (error)
+elif not lower:
+    print (error)
+elif not special:
+    print (error)
+elif space:
+    print (error)
+elif not number:
+    print (error)
+else: 
+    print("Strong Password")
+    
