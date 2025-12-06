@@ -1,0 +1,1 @@
+This is a password checker I have created that checks if an entered password is strong enough based upon this criteria, if it has ta least 10 character, 1 number, 1 special character, 1 lowercase and uppercase letter
