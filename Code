@@ -3,6 +3,7 @@
 
 import string
 
+#variables
 password = input("Enter Your Password ")
 number = any(char.isdigit() for char in password)
 upper = any(char.isupper() for char in password)
